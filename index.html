@@ -47,7 +47,7 @@
     .then(data => {
       alcaldiasLayer.addData(data);
   });
-  var overlayMaps = {
+  	var overlayMaps = {
     "Alcaldías CDMX": alcaldíasLayer
   };
   L.control.layers(null, overlayMaps).addTo(mao);
