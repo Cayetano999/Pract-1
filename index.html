@@ -20,7 +20,7 @@
 <!-- Incluye la librería de Leaflet -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
-	var map = L.map('map').setView([19.4326, -99.133], 13);
+ var map = L.map('map').setView([19.4326, -99.133], 13);
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '© OpenStreetMap contributors' // Muestra el crédito obligatorio
 	}).addTo(map);
@@ -29,7 +29,7 @@
  	  .openPopup();
 	L.marker([19.3467, -99.1617]).addTo(map)
  	  .bindPopup('Coyoacán');
-	var alcaldiasLayer = L.geoJSON(null, {
+  var alcaldiasLayer = L.geoJSON(null, {
 	style. { 
 	  color: 'blue',
 	  weight: 2,
@@ -47,7 +47,7 @@
     .then(data => {
       alcaldiasLayer.addData(data);
   });
-  	var overlayMaps = {
+  var overlayMaps = {
     "Alcaldías CDMX": alcaldíasLayer
   };
   L.control.layers(null, overlayMaps).addTo(mao);
