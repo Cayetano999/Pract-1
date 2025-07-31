@@ -41,12 +41,22 @@
  // Segundo marcador: Coyoacán
   L.marker([19.3467, -99.1617]).addTo(map)
     .bindPopup('Coyoacán');
+  L.marker([19.110254771586913, -99.0320639033225]).addTo(map)
+    .bindPopup('Volcán Tláloc');
+  L.marker([19.215753351482373, -99.25350311179508]).addTo(map)
+    .bindPopup('CPico del águila');
+  L.marker([19.303378100077254, -99.14939906460684]).addTo(map)
+    .bindPopup('Estadio Azteca');
+  L.marker([19.449775164126937, -99.1574512999079]).addTo(map)
+    .bindPopup('Kiosko morisko');
+  L.marker([19.35227641230217, -99.28169219484276]).addTo(map)
+    .bindPopup('UAM Cuajimalpa');
 
   // Define la capa vacía para las alcaldías
   var alcaldiasLayer = L.geoJSON(null, {
     style: {
-      color: 'blue',
-      weight: 2,
+      color: 'green',
+      weight: 4,
       fillOpacity: 0.1
     },
     onEachFeature: function (feature, layer) {
